@@ -1,0 +1,121 @@
+public class Wyzwanie_1 {
+
+    public static void main(String[] args) {
+
+        //     WYZWANIE_1 - LICZBA UJEMNA
+      //  Napisz program, który sprawdzi czy podana liczba całkowita jest mniejsza od zera. Jeżeli liczba jest mniejsza od zera, wyświetl na konsoli komunikat “Podana liczba jest mniejsza od zera”. Jeżeli liczba będzie większa lub równa zero, wyświetl komunikat “Podana liczba jest większa lub równa zero”.
+
+              int number=-1;
+              
+            if (number<0) {
+                System.out.println("Podana liczba jest mniejsza od zera");
+            }
+            else {
+                System.out.println("Podana liczba jest większa lub równa zero");
+            }
+            
+
+        //  WYZWANIE_2 - POLE I OBWÓD KWADRATU
+    // Napisz program, który na podstawie boku kwadratu obliczy jego pole i obwód. Pole i obwód powinny zostać wyświetlone na konsoli. Program powinien sprawdzić, czy wprowadzona długość boku jest dodatnia. Jeżeli jest, to powinien wykonać obliczenia i pokazać wynik. Jeżeli długość boku jest równa 0, powinien zostać wyświetlony komunikat "Długość boku nie może być równa 0". Jeżeli długość boku jest ujemna, powinien zostać wyświetlony komunikat "Długość boku nie może być ujemna".
+
+        
+        int square_side_length = 5;
+            
+        if (square_side_length < 0) {
+            System.out.println("Długość boku nie może być ujemna");
+        } else if (square_side_length == 0) {
+            System.out.println("Długość boku nie może być równa 0");
+        } else {
+            System.out.println("Pole kwadratu = " + square_side_length * square_side_length);
+            System.out.println("Obwód kwadratu = " + 4 * square_side_length);
+        }
+
+
+        //  WYZWANIE_3 - LICZBA NA DZIEŃ TYGODNIA
+    // Napisz program, który podaną liczbę zamieni na tekst i go wyświetli zgodnie z poniższym wzorem:
+        //1 – Dzisiaj jest poniedziałek
+        //2 – Dzisiaj jest wtorek
+        //3 – Dzisiaj jest środa
+        //4 – Dzisiaj jest czwartek
+        //5 – Dzisiaj jest piątek
+        //6 – Dzisiaj jest weekend
+        //7 – Dzisiaj jest weekend
+        //Upewnij się też, że podana liczba jest z przedziału <1; 7>.
+
+        
+        int number_of_day = 9;
+
+        if (number_of_day <= 0) {
+            System.out.println("Liczba musi być większa od 0");
+        } else if (number_of_day > 9) {
+            System.out.println("Liczba musi być jednocyfrowa");
+        } else if (number_of_day == 1) {
+            System.out.println("jeden");
+        } else if (number_of_day == 2) {
+            System.out.println("dwa");
+        } else if (number_of_day == 3) {
+            System.out.println("trzy");
+        } else if (number_of_day == 4) {
+            System.out.println("cztery");
+
+        } else if (number_of_day == 5) {
+            System.out.println("pięć");
+
+        } else if (number_of_day == 6) {
+            System.out.println("sześć");
+
+        } else if (number_of_day == 7) {
+            System.out.println("siedem");
+
+        } else if (number_of_day == 8) {
+            System.out.println("osiem");
+
+        } else if (number_of_day == 9) {
+            System.out.println("dziewięć");
+        }
+
+ 
+        //WYZWANIE_4 - LICZBA JEDNOCYFROWA SŁOWNIE
+    // Napisz program, który podaną jednocyfrową nieujemną liczbę całkowitą zapisze słownie. Przykład: jeżeli program otrzyma liczbę 2, powinien na konsoli wyświetlić “dwa”. Program powinien także upewnić się, że liczba jest jednocyfrowa i nieujemna. Zakładamy, że liczba zawsze będzie całkowita.
+
+           int number = 11;
+
+        if (number >= 0 && number < 10) {
+            String numberInWords = switch (number) {
+                case 0 -> "zero";
+                case 1 -> "jeden";
+                case 2 -> "dwa";
+                case 3 -> "trzy";
+                case 4 -> "cztery";
+                case 5 -> "pięć";
+                case 6 -> "sześć";
+                case 7 -> "siedem";
+                case 8 -> "osiem";
+                case 9 -> "dziewięć";
+                default -> "";
+            };
+            System.out.println("Podana liczba to " + numberInWords);
+        } else {
+            System.out.println("Wprowadzona liczba jest nieprawidłowa.");
+        }
+
+    
+
+
+     // WYZWANIE_5
+     //Napisz program, który z trzech wprowadzonych liczb wybierze największą i wyświetli ją w konsoli. Zakładamy, że wszystkie trzy liczby są różne od siebie.
+
+        int a = 6;
+        int b = 3;
+        int c = 4;
+
+        if (a>b && a>c) {
+            System.out.println("Największą liczbą jest " + a);
+            } else if (b>c && b>a) {
+            System.out.println("Największą liczbą jest " + b);
+        } else if (c>b && c>a) {
+            System.out.println("Największą liczbą jest " + c);
+        }
+
+    }
+}
